@@ -1,38 +1,4 @@
-# Proxmox Security Homelab
 
-A personal Proxmox-based home server built as a hands-on environment for learning Linux administration, virtualization, networking, self-hosting, and defensive security.
-
-The lab runs on a dedicated private network and is managed from my Windows laptop using the Proxmox web interface and SSH.
-
-## Architecture
-
-```text
- PUBLIC / DORM LAN
-        |
-        v
-    Lab Router
-        |
-        +----------------------+
-        |                      |
-Windows Laptop          Proxmox Server
-                              |
-        +---------------------+----------------------+
-        |                     |                      |
-   Ubuntu Server          Containers              Kali VM
-        |                     |                      |
-      Docker               Pi-hole              Security Labs
-        |                Home Assistant
-        |                   Immich
-        |
-   +----+---------+
-   |              |
-Minecraft       Other
-Server          Services
-
-        +---------------------+
-        |                     |
-       NAS              Backup Server
-```
 
 # Proxmox Security Homelab
 
