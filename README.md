@@ -7,7 +7,7 @@ The lab runs on a dedicated private network and is managed from my Windows lapto
 ## Architecture
 
 ```text
-Dorm Wi-Fi
+ PUBLIC LAN
      |
      v
 Lab Router
