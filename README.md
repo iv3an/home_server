@@ -273,7 +273,7 @@ Tools used or planned for managing the lab include:
 
 ## Skills Practiced
 
-`Proxmox` `Linux` `SSH` `Networking` `Docker` `Containers` `DNS` `Pi-hole` `NAS` `Virtualization` `Self-Hosting` `Kali Linux`
+`Proxmox` `Linux` `SSH` `Networking` `Docker` `Containers` `DNS` `Pi-hole` `NAS` `Virtualization` `Self-Hosting` 
 
 ---
 
