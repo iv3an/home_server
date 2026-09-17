@@ -23,17 +23,6 @@ The server acts as the main platform for running virtual machines, containers, s
 * Docker-based applications
 * Kali Linux security lab
 
-### Key Goals
-
-* Learn Proxmox virtualization and container management
-* Improve Linux system administration skills
-* Become more comfortable working from the command line
-* Practice SSH and remote server administration
-* Gain hands-on experience with TCP/IP, DNS, and local networking
-* Learn storage, file sharing, and backup management
-* Experiment with useful self-hosted services
-* Build practical defensive security and infrastructure skills
-
 The main purpose of this server is to act as a long-term learning environment where I can build, break, troubleshoot, and improve real services.
 
 ---
