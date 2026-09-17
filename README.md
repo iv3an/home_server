@@ -1,34 +1,37 @@
 # Proxmox Security Homelab
 
-A personal Proxmox-based home server built as a hands-on environment for learning Linux administration, virtualization, networking, and defensive security.
+A personal Proxmox-based home server built as a hands-on environment for learning Linux administration, virtualization, networking, self-hosting, and defensive security.
 
 The lab runs on a dedicated private network and is managed from my Windows laptop using the Proxmox web interface and SSH.
 
 ## Architecture
 
 ```text
- PUBLIC LAN
-     |
-     v
-Lab Router
-     |
-     +----------------------+
-     |                      |
-Windows Laptop        Proxmox Server
-                            |
-              +-------------+-------------+
-              |             |             |
-         Ubuntu Server  Windows Server   Kali Linux
-              |             |
-           Docker      Active Directory
-              |
-           Pi-hole
+ PUBLIC / DORM LAN
+        |
+        v
+    Lab Router
+        |
+        +----------------------+
+        |                      |
+Windows Laptop          Proxmox Server
+                              |
+        +---------------------+----------------------+
+        |                     |                      |
+   Ubuntu Server          Containers              Kali VM
+        |                     |                      |
+      Docker               Pi-hole              Security Labs
+        |                Home Assistant
+        |                   Immich
+        |
+   +----+---------+
+   |              |
+Minecraft       Other
+Server          Services
 
-Security Logs
-     |
-   Sysmon
-     |
-   Splunk
+        +---------------------+
+        |                     |
+       NAS              Backup Server
 ```
 
 ## Lab Goals
@@ -37,10 +40,10 @@ Security Logs
 * Improve Linux system administration skills
 * Practice SSH and remote server management
 * Understand TCP/IP, DNS, and local networking
-* Build and manage Windows Server and Active Directory
-* Deploy self-hosted services with Docker
-* Collect and analyze logs
-* Build a small SOC-style security monitoring environment
+* Learn Docker and container management
+* Host and manage self-hosted services
+* Gain experience with storage and backups
+* Build hands-on defensive security skills
 
 ## Current Progress
 
@@ -51,51 +54,51 @@ Security Logs
 * [ ] Ubuntu Server VM created
 * [ ] Docker configured
 * [ ] Pi-hole deployed
-* [ ] Windows Server deployed
-* [ ] Active Directory configured
-* [ ] Sysmon configured
-* [ ] Splunk deployed
-* [ ] SOC monitoring lab completed
+* [ ] Minecraft server deployed
+* [ ] NAS configured
+* [ ] Immich deployed
+* [ ] Home Assistant deployed
+* [ ] Backup server configured
+* [ ] Kali Linux VM deployed
 
 ## Planned Services
 
 ### Ubuntu Server
 
-Used for Linux administration, SSH, Docker, networking experiments, and security tooling.
+Used for Linux administration, SSH, Docker, networking, and self-hosted applications.
+
+### Minecraft Server
+
+Modded Minecraft server used to practice Linux server management, networking, resource management, and service hosting.
+
+### NAS
+
+Network-attached storage for personal files, media, server data, and backups.
 
 ### Pi-hole
 
-Network-wide DNS filtering and a practical environment for learning DNS traffic and network visibility.
+Network-wide DNS filtering used to learn more about DNS, network traffic, and local services.
 
-### Windows Server
+### Immich
 
-Used to build an Active Directory environment with users, groups, Group Policy, and domain-joined clients.
+Self-hosted photo and video management platform for building a personal cloud photo library.
 
-### Splunk + Sysmon
+### Home Assistant
 
-Used to collect Windows events and practice basic SIEM monitoring and security investigation.
+Self-hosted home automation platform used for experimenting with local services and integrations.
+
+### Backup Server
+
+Used to store backups of virtual machines, containers, configurations, and important server data.
 
 ### Kali Linux
 
-An isolated VM used for testing and generating security events inside the lab environment.
-
-## Documentation
-
-Detailed documentation will be added as the lab develops:
-
-* [Proxmox Installation](setup/proxmox-installation.md)
-* [Network Configuration](setup/networking.md)
-* [SSH Setup](setup/ssh-setup.md)
-* [Pi-hole](services/pihole.md)
-* [Windows Server](services/windows-server.md)
-* [Active Directory](services/active-directory.md)
-* [Splunk](services/splunk.md)
-* [Sysmon](security-lab/sysmon.md)
+An isolated VM used for cybersecurity labs, network testing, and defensive security practice.
 
 ## Skills Practiced
 
-`Proxmox` `Linux` `SSH` `Networking` `Docker` `DNS` `Windows Server` `Active Directory` `Sysmon` `Splunk` `SIEM` `Blue Team`
+`Proxmox` `Linux` `SSH` `Networking` `Docker` `Containers` `DNS` `Pi-hole` `NAS` `Virtualization` `Self-Hosting` `Kali Linux`
 
 ## Project Status
 
-This homelab is actively being built and documented as I learn new technologies and security concepts.
+This homelab is actively being built and expanded as I learn more about virtualization, Linux, networking, self-hosting, and cybersecurity.
