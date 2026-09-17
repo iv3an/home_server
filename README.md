@@ -1,5 +1,3 @@
-
-
 # Proxmox Security Homelab
 
 A personal Proxmox-based home server built as a hands-on environment for learning Linux administration, virtualization, networking, self-hosting, and defensive security.
